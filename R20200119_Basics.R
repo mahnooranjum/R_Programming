@@ -10,3 +10,6 @@ sequence = seq(from=0, to=100, by=1/3)
 intSeq = 50:100
 
 mat <- matrix(x1, nrow=2, byrow=TRUE)
+
+pattern = seq(from=10, to=12, by=1/2)
+repeater = rep(pattern, times=10)
