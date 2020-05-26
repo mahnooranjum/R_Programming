@@ -27,7 +27,7 @@ regressor = lm(formula = y ~ .,
 y_pred = predict(regressor, newdata = test_set)
 
 
-# Visualising the test versus prediction results
+# Visualising 
 library(ggplot2)
 ggplot() +
   geom_point(aes(x = test_set$y, y = predict(regressor, newdata = test_set)),
