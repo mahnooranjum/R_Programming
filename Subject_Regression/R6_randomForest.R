@@ -26,7 +26,7 @@ regressor = randomForest(x = dataset[-2],
 y_pred = predict(regressor, newdata = test_set)
 
 
-# Visualising
+# Visualising superdatascience.com
 library(ggplot2)
 ggplot() +
   geom_point(aes(x = training_set$X, y = training_set$y),
@@ -37,7 +37,7 @@ ggplot() +
   xlab('X') +
   ylab('y')
 
-# Visualising the Test set results
+# Visualising superdatascience.com
 library(ggplot2)
 ggplot() +
   geom_point(aes(x = test_set$X, y = test_set$y),
