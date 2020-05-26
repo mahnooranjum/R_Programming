@@ -25,7 +25,7 @@ y_pred = predict(classifier, type = 'response', newdata = test_set[-3])
 # Making the Confusion Matrix
 cm = table(test_set[, 3], y_pred)
 
-# Visualising 
+# Visualising superdatascience.com
 library(ElemStatLearn)
 set = training_set
 X1 = seq(min(set[, 1]), max(set[, 1]), by = 0.01)
@@ -42,7 +42,7 @@ contour(X1, X2, matrix(as.numeric(y_grid), length(X1), length(X2)), add = TRUE)
 points(grid_set, pch = '.', col = ifelse(y_grid == 1, 'cyan1', 'brown1'))
 points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'blue', 'red3'))
 
-# Visualising 
+# Visualising superdatascience.com
 library(ElemStatLearn)
 set = test_set
 X1 = seq(min(set[, 1]), max(set[, 1]), by = 0.01)
